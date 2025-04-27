@@ -1,6 +1,17 @@
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # this reads .env and sets environment variables
+
+# now you can get variables like this
+API_ID = os.getenv("API_ID")
+API_HASH = os.getenv("API_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OWNER_ID = os.getenv("OWNER_ID")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 from os import environ 
 
