@@ -10,8 +10,8 @@ load_dotenv()  # this reads .env and sets environment variables
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-OWNER_ID = os.getenv("OWNER_ID")
-DATABASE_URL = os.getenv("DATABASE_URL")
+OWNER_ID = os.getenv("BOT_OWNER")
+DATABASE_URL = os.getenv("DATABASE_URI")
 
 from os import environ 
 
