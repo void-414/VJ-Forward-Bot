@@ -9,8 +9,8 @@ load_dotenv()  # load .env variables
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-OWNER_ID = os.getenv("OWNER_ID")
-DATABASE_URL = os.getenv("DATABASE_URL")
+OWNER_ID = os.getenv("BOT_OWNER")
+DATABASE_URL = os.getenv("DATABASE_URI")
 
 from os import environ 
 
@@ -19,9 +19,9 @@ class Config:
     API_HASH = environ.get("API_HASH", "")
     BOT_TOKEN = environ.get("BOT_TOKEN", "") 
     BOT_SESSION = environ.get("BOT_SESSION", "vjbot") 
-    DATABASE_URI = environ.get("DATABASE_URL", "")
+    DATABASE_URI = environ.get("DATABASE_URI", "")
     DATABASE_NAME = environ.get("DATABASE_NAME", "vj-forward-bot")
-    BOT_OWNER = int(environ.get("OWNER_ID", ""))  # <--- fixed here
+    BOT_OWNER = int(environ.get("BOT_OWNER", ""))  # <--- fixed here
 
 class temp(object): 
     lock = {}
